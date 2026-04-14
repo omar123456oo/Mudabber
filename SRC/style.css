@@ -1097,9 +1097,20 @@
 .bottom-row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-    margin-top: 16px;
+    gap: 14px;
+    margin-top: 14px;
     direction: rtl;
+}
+
+.bottom-row .panel-card {
+    border-radius: 18px;
+    padding: 14px;
+    border-color: #e6edf5;
+    box-shadow: 0 3px 10px rgba(15, 23, 42, 0.05);
+}
+
+.bottom-row .panel-head {
+    margin-bottom: 12px;
 }
 
 /* ============================================
@@ -1109,40 +1120,52 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+    background: linear-gradient(180deg, #f2f7ff 0%, #eef5ff 100%);
+    border-radius: 12px;
+    border: 1px solid #deebff;
+    padding: 10px 12px;
 }
 
 .budget-label {
-    font-size: 12px;
+    font-size: 11px;
     color: #64748b;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .budget-total-val {
-    font-size: 18px;
+    font-size: 33px;
     font-weight: 800;
-    color: #0f172a;
+    color: #0f3a8f;
+}
+.g{
+    color: #16a34a;
+}
+.gr{
+    color: #16a34a;
 }
 
 .budget-remain-val {
-    font-size: 16px;
+    font-size: 32px;
     font-weight: 700;
-    color: #2563eb;
+    color: #1d4ed8;
 }
 
 .budget-meta {
-    font-size: 12px;
+    font-size: 11px;
     color: #64748b;
-    margin-bottom: 6px;
+    margin-top: 4px;
 }
 
 .prog-bar {
     width: 100%;
-    height: 8px;
-    background: #f1f5f9;
+    height: 7px;
+    background: #edf2ff;
     border-radius: 999px;
     overflow: hidden;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
+    
+
 }
 
 .prog-fill {
@@ -1152,23 +1175,60 @@
 
 .budget-cat-item {
     margin-bottom: 10px;
+    padding: 9px 10px 10px;
+    border: 1px solid #edf2f7;
+    border-radius: 12px;
+    background: #fff;
 }
 
 .budget-cat-head {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
+}
+
+.budget-cat-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cat-icon {
+    width: 22px;
+    height: 22px;
+    border-radius: 7px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    line-height: 1;
+}
+
+.cat-icon--orange {
+    background: #fff3e0;
+}
+
+.cat-icon--red {
+    background: #fee2e2;
+}
+
+.cat-icon--pink {
+    background: #fce7f3;
+}
+
+.cat-icon--teal {
+    background: #e0f2fe;
 }
 
 .cat-name-txt {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
     color: #0f172a;
 }
 
 .cat-amount-txt {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
     color: #0f172a;
     display: block;
@@ -1186,7 +1246,7 @@
 .chart-legend {
     display: flex;
     gap: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     direction: rtl;
 }
 
@@ -1219,8 +1279,8 @@
     justify-content: space-evenly;
     align-items: flex-end;
     direction: rtl;
-    gap: 8px;
-    min-height: 120px;
+    gap: 4px;
+    min-height: 122px;
 }
 
 .chart-week {
@@ -1233,13 +1293,14 @@
 .chart-col {
     display: flex;
     align-items: flex-end;
-    gap: 4px;
+    gap: 6px;
+    direction: ltr;
 }
 
 .bar {
     display: inline-block;
-    width: 15px;
-    border-radius: 3px 3px 0 0;
+    width: 14px;
+    border-radius: 6px 6px 0 0;
 }
 
 .bar--green {
@@ -1252,13 +1313,14 @@
 
 .chart-label {
     font-size: 11px;
-    color: #94a3b8;
+    color: #6b7280;
     text-align: center;
     white-space: nowrap;
 }
 
 .bottom-mid-col {
-    row-gap: 10px;
+    display: grid;
+    row-gap: 12px;
 }
 
 /* ============================================
@@ -1266,9 +1328,9 @@
    ============================================ */
 .pay-card {
     perspective: 1000px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     cursor: pointer;
-    height: 160px;
+    height: 122px;
 }
 
 .pay-card:last-child {
@@ -1293,10 +1355,10 @@
     inset: 0;
     width: 100%;
     height: 100%;
-    border-radius: 12px;
+    border-radius: 14px;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
-    padding: 14px;
+    padding: 12px;
     color: white;
     direction: rtl;
     display: flex;
@@ -1316,18 +1378,18 @@
 
 .pay-card--visa .pay-card-front,
 .pay-card--visa .pay-card-back {
-    background: linear-gradient(135deg, #1d4ed8, #3b82f6);
+    background: linear-gradient(135deg, #1c3faa 0%, #2563eb 100%);
 }
 
 
 .pay-card--mastercard .pay-card-front,
 .pay-card--mastercard .pay-card-back {
-    background: linear-gradient(135deg, #dc2626, #f87171);
+    background: linear-gradient(135deg, #b0003a 0%, #e11d48 100%);
 }
 
 .pay-card--paypal .pay-card-front,
 .pay-card--paypal .pay-card-back {
-    background: linear-gradient(135deg, #1e3a5f, #2563eb);
+    background: linear-gradient(135deg, #0047c7 0%, #1d4ed8 100%);
 }
 
 .pay-card-back-strip {
@@ -1375,11 +1437,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
 }
 
 .pay-brand-txt {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -1390,19 +1452,20 @@
 }
 
 .pay-number-txt {
-    font-size: 12px;
+    font-size: 18px;
     letter-spacing: 2px;
-    margin: 6px 0;
-    opacity: 0.9;
+    margin: 4px 0;
+    font-weight: 700;
+    opacity: 1;
 }
 
 .pay-mini-label {
-    font-size: 10px;
-    opacity: 0.7;
+    font-size: 11px;
+    opacity: 0.8;
 }
 
 .pay-mini-val {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
 }
 
