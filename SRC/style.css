@@ -29,8 +29,6 @@
     width: 250px;
     flex-shrink: 0;
     background: white;
-    /* height: 100vh; */
-    /* overflow-y: auto; */
     padding: 20px;
     border-left: 1px solid #eee;
     display: flex;
@@ -346,7 +344,6 @@
     width: 100%;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-columns: minmax(200px, auto);
-    /* background-color:white; */
     align-items: center;
     direction: rtl;
 
@@ -355,11 +352,9 @@
 .first-cards .first-cards-item {
     height: 200px;
     border: 1px solid rgb(227, 224, 224);
-    /* justify-items: center;  */
     border-radius: 12px;
     display: flex;
     justify-content: start;
-    /* أفقي */
     align-items: center;
     background-color: white;
 
@@ -885,9 +880,6 @@
     font-weight: 800 !important;
 }
 
-/* ============================================
-   MID ROW LAYOUT
-   ============================================ */
 .mid-row {
     display: flex;
     flex-direction: row;
@@ -911,9 +903,6 @@
     margin-top: 0;
 }
 
-/* ============================================
-   PANEL CARD BASE
-   ============================================ */
 .panel-card {
     background: #fff;
     border: 1px solid #e8edf4;
@@ -948,9 +937,6 @@
     color: #2563eb;
 }
 
-/* ============================================
-   ACTIVITIES
-   ============================================ */
 .activity-item {
     display: flex;
     align-items: flex-start;
@@ -1052,9 +1038,6 @@
     background: #dbeafe;
 }
 
-/* ============================================
-   BILLS
-   ============================================ */
 .bill-item {
     display: flex;
     justify-content: space-between;
@@ -1091,9 +1074,6 @@
     color: #94a3b8;
 }
 
-/* ============================================
-   BOTTOM 3-COLUMN ROW
-   ============================================ */
 .bottom-row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1113,9 +1093,6 @@
     margin-bottom: 12px;
 }
 
-/* ============================================
-   BUDGET
-   ============================================ */
 .budget-header {
     display: flex;
     justify-content: space-between;
@@ -1240,9 +1217,6 @@
     display: block;
 }
 
-/* ============================================
-   CHART
-   ============================================ */
 .chart-legend {
     display: flex;
     gap: 16px;
@@ -1323,9 +1297,6 @@
     row-gap: 12px;
 }
 
-/* ============================================
-   PAYMENT CARDS — 3D FLIP
-   ============================================ */
 .pay-card {
     perspective: 1000px;
     margin-bottom: 12px;
@@ -1473,9 +1444,6 @@
     color: #fca5a5;
 }
 
-/* ============================================
-   ACCOUNT SUMMARY
-   ============================================ */
 .bottom-row-single {
     margin-top: 16px;
     margin-bottom: 20px;
@@ -1546,9 +1514,6 @@
     color: #dc2626;
 }
 
-/* ============================================
-   BILLS PANEL — DETAILED GRID
-   ============================================ */
 .bills-total {
     text-align: center;
     margin-bottom: 18px;
@@ -1640,12 +1605,6 @@
 .due--green {
     color: #22c55e;
 }
-/* ============================================
-   RESPONSIVE BREAKPOINTS (Bootstrap style)
-   xs: 320-575.98 | sm: 576-767.98 | md: 768-991.98 | lg: 992-1199.98
-   ============================================ */
-
-/* lg: 992px -> 1199.98px (desktop compact with icon rail) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .left-side {
         padding: 14px;
@@ -1694,7 +1653,6 @@
     }
 }
 
-/* md: 768px -> 991.98px (tablet with icon rail) */
 @media (min-width: 768px) and (max-width: 991.98px) {
     .left-side {
         padding: 12px;
@@ -1757,7 +1715,6 @@
     }
 }
 
-/* sm: 576px -> 767.98px (single-column mobile layout) */
 @media (min-width: 576px) and (max-width: 767.98px) {
     .container {
         display: block;
@@ -1803,7 +1760,6 @@
     }
 }
 
-/* xs: 320px -> 575.98px (single-column, tighter spacing) */
 @media (min-width: 320px) and (max-width: 575.98px) {
     .container {
         display: block;
